@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Empresa XYZ</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="nome-empresa">Empresa XYZ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="menu" id="link01" href="#">Início</a></li>
+            <li><a class="menu" href="#">Produtos</a></li>
+            <li><a class="menu" href="#">Serviços</a></li>
+            <li><a class="menu" href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Sobre Nossa Empresa</h2>
+        <p id="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra justo sed metus aliquam, eget
+            fringilla lectus dapibus.</p>
+
+        <h2>Nossos Produtos</h2>
+        <ul id="produtos">
+            <li>Produto A</li>
+            <li>Produto B</li>
+            <li>Produto C</li>
+        </ul>
+
+        <h2>Serviços Oferecidos</h2>
+        <ul id="servicos">
+            <li>Serviço A</li>
+            <li>Serviço B</li>
+            <li>Serviço C</li>
+        </ul>
+
+        <h2>Contato</h2>
+        <p>Telefone: <span aria-content="telefone">(00) 1234-5678</span></p>
+        <p>Email:
+        <address><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                data-cfemail="d8bbb7b6acb9acb798bdb5a8aabdabb9f6bbb7b5">[email&#160;protected]</a></address>
+        </p>
+
+        <h2>Relatório de Vendas</h2>
+        <table id="vendas">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/01/2024</td>
+                    <td>Produto A</td>
+                    <td>10</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td>02/01/2024</td>
+                    <td>Produto B</td>
+                    <td>8</td>
+                    <td>R$ 80,00</td>
+                </tr>
+                <tr>
+                    <td>03/01/2024</td>
+                    <td>Produto C</td>
+                    <td>15</td>
+                    <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                    <td>01/02/2024</td>
+                    <td>Produto A</td>
+                    <td>10</td>
+                    <td>R$ 120,00</td>
+                </tr>
+                <tr>
+                    <td>02/02/2024</td>
+                    <td>Produto B</td>
+                    <td>8</td>
+                    <td>R$ 10,00</td>
+                </tr>
+                <tr>
+                    <td>03/02/2024</td>
+                    <td>Produto C</td>
+                    <td>15</td>
+                    <td>R$ 300,00</td>
+                </tr>
+                <tr>
+                    <td>01/03/2024</td>
+                    <td>Produto A</td>
+                    <td>10</td>
+                    <td>R$ 190,00</td>
+                </tr>
+                <tr>
+                    <td>02/03/2024</td>
+                    <td>Produto B</td>
+                    <td>8</td>
+                    <td>R$ 180,00</td>
+                </tr>
+                <tr>
+                    <td>03/03/2024</td>
+                    <td>Produto C</td>
+                    <td>15</td>
+                    <td>R$ 1150,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead id="resumo-vendas-cab">
+                <tr>
+                    <th colspan="3">Resumo de vendas</th>
+                </tr>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="resumo-vendas"></tbody>
+        </table>
+
+
+        <div style="display: flex; justify-content: space-between; margin-top: 50px;">
+            <div style="width: 45%;">
+                <form id="formulario">
+                    <h2>Adicionar Venda</h2>
+                    <label for="dataVenda">Data:</label>
+                    <input type="date" id="dataVenda" name="dataVenda" required><br>
+        
+                    <label for="nomeProduto">Nome do Produto:</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" required><br>
+        
+                    <label for="quantidadeVendida">Quantidade Vendida:</label>
+                    <input type="number" id="quantidadeVendida" name="quantidadeVendida" required><br>
+        
+                    <label for="valorVendido">Valor Vendido R$:</label>
+                    <input type="text" id="valorVendido" name="valorVendido" required><br>
+        
+                    <input type="submit" value="Adicionar Venda">
+                </form>
+            </div>
+        
+            <div style="width: 45%;">
+                <form id="formulario-excluir-produto">
+                    <h2>Excluir Produto</h2>
+                    <label for="produto">Produto:</label>
+                    <select id="produto" name="produto">
+                    </select><br>
+                    <button type="submit">Excluir Produto</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Empresa XYZ. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
